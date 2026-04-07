@@ -13,3 +13,19 @@ result1 = count.bit_count()
 result2 = count.numerator
 
 print(result1, result2)
+
+course = "AI python fullstack"
+result3 = type(course)
+
+print(f"type of {result3}")
+
+result = course.title()
+
+print(f"the result {result}")
+
+result = course.upper()
+
+print(f"asd{result}")
+result = course.replace("AI python fullstack", "Scott")
+
+print(result)
