@@ -15,7 +15,7 @@ print("==== DEFINE VS CALL ====")
 def greet(a):
     print(f"how do you do, {a} ")
 
-    
+
 def greeting(b):
     print("greeting is executed")
     return f"hi {b}"
@@ -27,3 +27,16 @@ print("resul1:", result1)
 result2 = greeting("JESUS NAVAS")
 
 print("result2:",result2)
+
+
+print("===== Keyword & default arguments =====")
+#DEFINE
+def givegreeting(name, age=10):
+    print("give_greet is executed")
+    return f"Hi {name}, you are {age} years old"
+
+result3 = givegreeting(name="SCOTT", age=26)
+print(f"result3: {result3}")
+
+result4 = givegreeting(name="SCOTT",)
+print(f"result3: {result4}")
