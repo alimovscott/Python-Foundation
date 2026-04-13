@@ -5,6 +5,8 @@ print("=== Iterable objects & RANGE ===")
 
 range_obj = range(3)
 
+
+
 text = "SCOTT"
 for letter in text:
     print(f"the letter: {letter}")
@@ -32,6 +34,6 @@ print(f"hobby {hobby}")
 print(f"iSmaried=> {Ismaried}")
 print(f"name:{name}")
 
-del person_obj["single"]
+del person_obj["age"]
 for key in person_obj:
     print(f"the keys {key}")

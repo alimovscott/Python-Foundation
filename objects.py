@@ -23,6 +23,7 @@ print(type(array))
 print(type(math))
 
 
+
 #PARADIGMA > Functional Programming & OOP
 # OOP 4 CONSEPTS > ABCTRACTION | ENCAPSuLATION | INHERTENCE | POLIFORMISM
 
