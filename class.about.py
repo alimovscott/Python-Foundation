@@ -42,7 +42,7 @@ person1.introduce()
 person1.say_age()
 
 
-
+# call Ordinary method
 print("==== Ordinary vs static properties  ====")
 new_message = Person.message
 print(new_message)
@@ -50,3 +50,50 @@ print(new_message)
 
 Person.explain()
 
+
+
+print("==== special/ magic methods  ====")
+# Python most common special methods are below:
+# __init__, __new__, __str__, _call__, __getitem__, __eq__, __len__ ...
+
+class Car():
+    #Constractor
+    def __new__(cls, *args):
+        print("*__new__*")
+        return super().__new__(cls)
+    
+    
+    #State
+    description = "This class makes cars"
+
+    #Constractor
+    def __init__(self, name, year):
+        self.name = name
+        self.year = year
+
+    #Method
+    def start_engine(self):
+        print(f"the {self.name} started engine!")
+    
+    def stop_engine(self):
+        print(f"the {self.name} stopped engine!")
+    
+    def __str__(self):
+        return f" {self.name} was produced in {self.year} year "
+    
+    def __call__(self):
+        print("Object called like a function")
+        return True
+
+    
+car1 = Car("Genisis", 2025)
+car1.start_engine()
+car1.stop_engine()
+
+
+print("----")
+your_car = Car("Ferari", 2026)
+print(your_car)
+
+response = your_car()
+print(response)
